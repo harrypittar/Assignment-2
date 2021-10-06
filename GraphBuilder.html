@@ -2,6 +2,9 @@
 <html>
 
 <head>
+    
+    
+    
     <script type="text/javascript">
         window.onload = function() {
             var dps = []; //dataPoints. 
@@ -31,16 +34,24 @@
         }
     </script>
     <script type="text/javascript" src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+    
 </head>
 
 <body>
+    
     X Value:
-    <input id="xValue" type="number" step="any" placeholder="Enter X-Value"> Y Value:
-    <input id="yValue" type="number" step="any" placeholder="Enter Y-Value">
+    <input id="xValue" name="xValue" type="number" step="any" placeholder="Enter X-Value" required> 
+    Y Value:
+    <input id="yValue" name="yValue" type="number" step="any" placeholder="Enter Y-Value" required>
+
     <button id="renderButton">Add DataPoint</button>
     <button onClick="window.location.reload();">Reset</button>
     <div id="chartContainer" style="height: 270px; width: 100%;">
+    
     </div>
+    
+ 
+
 </body>
 
 </html>
